@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -25,10 +24,10 @@ class LoginScreen extends StatelessWidget {
               gradient: LinearGradient(
                   transform: const GradientRotation(-10),
                   colors: [
-                    Colors.pink[100]!,
-                    Colors.pink[100]!,
-                    Colors.purple[100]!,
-                    Colors.purple[100]!,
+                    Colors.pink.shade100,
+                    Colors.pink.shade100,
+                    Colors.purple.shade200,
+                    Colors.purple.shade200,
                   ],
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight),
@@ -61,7 +60,7 @@ class LoginScreen extends StatelessWidget {
                           color: Colors.white.withOpacity(.3),
                           borderRadius: BorderRadius.circular(30),
                         ),
-                        child: Column( 
+                        child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
@@ -75,18 +74,20 @@ class LoginScreen extends StatelessWidget {
                               height: 20.h,
                             ),
                             TextField(
-                                controller: emailController,
-                                decoration: InputDecoration(
-                                    hintStyle: const TextStyle(
-                                      color: Colors.grey,
-                                    ),
-                                    hintText: "User Name",
-                                    filled: true,
-                                    fillColor: Colors.white,
-                                    border: OutlineInputBorder(
-                                      borderSide: BorderSide.none,
-                                      borderRadius: BorderRadius.circular(30),
-                                    ),),),
+                              controller: emailController,
+                              decoration: InputDecoration(
+                                hintStyle: const TextStyle(
+                                  color: Colors.grey,
+                                ),
+                                hintText: "User Name",
+                                filled: true,
+                                fillColor: Colors.white,
+                                border: OutlineInputBorder(
+                                  borderSide: BorderSide.none,
+                                  borderRadius: BorderRadius.circular(30),
+                                ),
+                              ),
+                            ),
                             SizedBox(
                               height: 20.h,
                             ),
